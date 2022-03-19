@@ -1,0 +1,12 @@
+# 应用名称
+spring:
+  application:
+    name: springboot-actuator
+
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
