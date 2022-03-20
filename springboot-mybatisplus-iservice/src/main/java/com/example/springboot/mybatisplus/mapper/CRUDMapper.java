@@ -1,9 +1,0 @@
-package com.example.springboot.mybatisplus.mapper;
-
-import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.example.springboot.mybatisplus.entity.User;
-import org.apache.ibatis.annotations.Mapper;
-
-@Mapper
-public interface CRUDMapper extends BaseMapper<User> {
-}

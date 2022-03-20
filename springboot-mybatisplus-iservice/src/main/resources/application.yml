@@ -15,6 +15,6 @@ logging:
   level:
     com.example.spring.mybatis.quickstart: debug
 #
-#mybatis:
-#  type-aliases-package: com.example.springboot.mybatisplus.entity
-#  mapper-locations: classpath:mapper/*Mapper.xml
+mybatis:
+  type-aliases-package: com.example.springboot.mybatisplus.entity
+  mapper-locations: classpath:mapper/*Mapper.xml

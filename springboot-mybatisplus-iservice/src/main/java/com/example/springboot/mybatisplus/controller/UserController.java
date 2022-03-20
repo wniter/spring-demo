@@ -1,7 +1,6 @@
 package com.example.springboot.mybatisplus.controller;
 
 import com.example.springboot.mybatisplus.entity.User;
-import com.example.springboot.mybatisplus.mapper.UserMapper;
 import com.example.springboot.mybatisplus.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -13,35 +12,42 @@ import java.util.Arrays;
 @RequestMapping("/user")
 public class UserController {
 
-
-    @Autowired
-    UserMapper userMapper;
-
     @Autowired
     UserService userService;
 
     @RequestMapping("/add")
-    public int add(User user) {
-        return userMapper.insert(user);
+    public void add(User user) {
+        boolean save = userService.save(user);
+
+    }
+    @RequestMapping("/SaveOrUpdate")
+    public void SaveOrUpdate(User user) {
+        boolean save = userService.saveOrUpdate(user);
+
     }
 
     @RequestMapping("/delete")
-    public int delete(User user) {
-        return userMapper.deleteById(user);
+    public boolean delete(Long id) {
+        return userService.removeById(id);
     }
 
     @RequestMapping("/delete01")
-    public int delete01(Long[] id) {
-        return userMapper.deleteBatchIds(Arrays.asList(id));
+    public boolean delete01(Long[] id) {
+        return userService.removeByIds(Arrays.asList(id));
     }
 
     @RequestMapping("/update")
-    public int update(User user) {
-        return userMapper.updateById(user);
+    public boolean  update(User user) {
+        return userService.updateById(user);
     }
 
-    @RequestMapping("/select")
-    public User select(Integer id) {
-        return userMapper.selectById(id);
+    @RequestMapping("/get")
+    public User get(Integer id) {
+        return userService.getById(id);
+    }
+
+    @RequestMapping("/count")
+    public long Page() {
+        return userService.count();
     }
 }
