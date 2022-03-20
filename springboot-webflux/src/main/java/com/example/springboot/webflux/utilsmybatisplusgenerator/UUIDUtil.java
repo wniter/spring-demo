@@ -1,4 +1,4 @@
-package com.example.springboot.webflux.utils;
+package com.example.springboot.webflux.utilsmybatisplusgenerator;
 
 import java.util.UUID;
 
