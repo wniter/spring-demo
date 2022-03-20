@@ -3,9 +3,9 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.example</groupId>
-    <artifactId>springboot-springdata</artifactId>
+    <artifactId>springboot-netty</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>springboot-springdata</name>
+    <name>springboot-netty</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>
@@ -16,27 +16,6 @@
     </properties>
 
     <dependencies>
-        <!--  添加依赖-->
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-        </dependency>
-        <!-- mysql -->
-        <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-            <version>8.0.13</version>
-        </dependency>
-        <!-- jpa -->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-jpa</artifactId>
-        </dependency>
-        <!--  添加依赖-->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter</artifactId>
@@ -53,13 +32,6 @@
                 </exclusion>
             </exclusions>
         </dependency>
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <scope>test</scope>
-        </dependency>
-
-
     </dependencies>
 
     <dependencyManagement>
@@ -91,7 +63,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>2.3.7.RELEASE</version>
                 <configuration>
-                    <mainClass>com.example.springboot.springdata.SpringbootSpringdataApplication</mainClass>
+                    <mainClass>com.example.springboot.netty.SpringbootNettyApplication</mainClass>
                 </configuration>
                 <executions>
                     <execution>

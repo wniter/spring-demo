@@ -1,0 +1,19 @@
+# 应用名称
+#spring.application.name=springboot-springdata
+server:
+  port: 8081    #设置端口
+  tomcat:
+    uri-encoding: utf-8
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/demo?characterEncoding=utf8&useSSL=false
+    username: root
+    password: 123456
+
+    jpa:
+      hibernate:
+        ddl-auto: update  #配置自动建表：updata:没有表新建，有表更新操作,控制台显示建表语句
+      show-sql: true	#是否显示sql
+
