@@ -2,8 +2,6 @@ package com.example.springboot.redis;
 
 
 
-import com.example.springboot.redis.service.StudentService;
-import com.example.springboot.redis.service.StudentServiceImpl;
 import com.example.springboot.redis.utils.RedisUtils;
 import lombok.extern.slf4j.Slf4j;
 import org.json.JSONException;
@@ -82,22 +80,7 @@ public class JedisTest {
 //            jedis.close(); // 关闭链接
 //        }
     }
-    @Autowired
-    StudentServiceImpl studentService = new StudentServiceImpl();
 
-    @Autowired
-    RedisUtils redisUtils = new RedisUtils();
-    @Test
-    public void redisTest() throws Exception{
-
-//        new redisTest().Testredis();
-        String key  ="11";
-//        String s = studentService.hasValue(key);
-
-        redisUtils.ListRedisDemo();
-
-
-    }
 
 
 }

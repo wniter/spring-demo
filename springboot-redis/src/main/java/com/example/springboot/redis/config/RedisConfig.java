@@ -48,14 +48,7 @@ public class RedisConfig {
         return template;
     }
 
-//    @Bean(name = "ooxx")
-//    public StringRedisTemplate ooxx(RedisConnectionFactory fc){
-//
-//        StringRedisTemplate tp = new StringRedisTemplate(fc);
-//
-//        tp.setHashValueSerializer(new Jackson2JsonRedisSerializer<Object>(Object.class));
-//        return  tp ;
-//    }
+
 
 
 //    @Bean

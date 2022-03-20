@@ -1,4 +1,20 @@
 # 应用名称
-spring.application.name=springboot-mybatisplus
+spring:
+  application:
+    name: springboot-mybatisplus
 
 
+  datasource:
+    url: jdbc:mysql://localhost:3306/demo?useUnicode=true&characterEncoding=utf8&allowMultiQueries=true&serverTimezone=GMT%2B8
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+# Logger Config
+logging:
+  level:
+    com.example.spring.mybatis.quickstart: debug
+#
+#mybatis:
+#  type-aliases-package: com.example.springboot.mybatisplus.entity
+#  mapper-locations: classpath:mapper/*Mapper.xml

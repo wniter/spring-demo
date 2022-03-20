@@ -8,6 +8,8 @@ public class SpringbootRedisApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(SpringbootRedisApplication.class, args);
+        System.out.println("localhost:8080/redis/test");
+        System.out.println("localhost:8080/student/test");
     }
 
 }

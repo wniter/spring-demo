@@ -1,13 +1,15 @@
 package com.example.springboot.mybatisplus;
 
-import org.junit.jupiter.api.Test;
+import com.example.springboot.mybatisplus.service.UserService;
+
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
 class SpringbootMybatisplusApplicationTests {
 
-    @Test
-    void contextLoads() {
-    }
+
+    @Autowired
+    UserService userService;
 
 }

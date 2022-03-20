@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.springboot.mybatis.mapper.StudentMapper">
+
+    <!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="com.example.springboot.mybatisplus.entity.User" id="StudentMapper">
+        <result property="id" column="id" jdbcType="INTEGER"/>
+        <result property="name" column="name" jdbcType="VARCHAR"/>
+        <result property="age" column="age" jdbcType="INTEGER"/>
+    </resultMap>
+<!--    可以自定义crud，参考mybatis-->
+
+
+</mapper>

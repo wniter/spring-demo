@@ -11,15 +11,15 @@ import static org.junit.jupiter.api.Assertions.*;
  */
 @SpringBootTest
 class StudentServiceTest {
-    @Autowired
-    StudentService studentService;
-    @Test
-    public void redisTest() throws Exception{
-
-//        new redisTest().Testredis();
-        String key  ="11";
-        studentService.hasValue(key);
-
-    }
+//    @Autowired
+//    StudentService studentService;
+//    @Test
+//    public void redisTest() throws Exception{
+//
+////        new redisTest().Testredis();
+//        String key  ="11";
+//        studentService.hasValue(key);
+//
+//    }
 
 }
