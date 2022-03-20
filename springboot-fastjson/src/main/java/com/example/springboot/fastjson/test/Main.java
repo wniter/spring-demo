@@ -62,6 +62,14 @@ public class Main {
     }
 }
 
+/**
+ * 结果：
+ * [Person(age=0, fullName=1, dateOfBirth=Mon Mar 21 02:18:56 CST 2022), Person(age=1, fullName=2, dateOfBirth=Mon Mar 21 02:18:56 CST 2022)]
+ * ---------------
+ * [{"AGE":0,"DATE OF BIRTH":1647800336166,"FULL NAME":"1"},{"AGE":1,"DATE OF BIRTH":1647800336166,"FULL NAME":"2"}]
+ * -----------
+ * [Person(age=0, fullName=1, dateOfBirth=Mon Mar 21 02:18:56 CST 2022), Person(age=1, fullName=2, dateOfBirth=Mon Mar 21 02:18:56 CST 2022)]
+ */
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
