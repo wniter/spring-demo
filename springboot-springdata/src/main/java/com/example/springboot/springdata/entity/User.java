@@ -4,20 +4,22 @@ import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
 import org.springframework.stereotype.Component;
 
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.Table;
-@Component
+import javax.persistence.*;
+
+@Entity //为什么不能用@Compont
 @NoArgsConstructor
 @AllArgsConstructor
 @Table(name = "user")
 public class User {
 
   @Id
-  @GeneratedValue
+  @GeneratedValue //主键的生成策略，例：@GeneratedValue(strategy = GenerationType.AUTO)
   private long id;
+  @Column(name = "name")
   private String name;
+  @Column(name = "age")
   private long age;
+  @Column(name = "email")
   private String email;
 
 
