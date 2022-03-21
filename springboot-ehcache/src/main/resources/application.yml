@@ -1,0 +1,8 @@
+# 应用名称
+#spring.application.name=springboot-ehcache
+
+
+cache:
+  type: ehcache
+  ehcache:
+    config: classpath:app1_ehcache.xml
