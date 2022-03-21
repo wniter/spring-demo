@@ -14,10 +14,11 @@ import java.util.Map;
  *
  * @create 2022-03-05 19:48
  */
+//这个是做什么的？
 public class MapperNameGenerator implements BeanNameGenerator {
+    private final static int index01 = 1;
 
     Map<String, Integer> mapper = new HashMap<>();
-    private final static int index01 = 1;
 
     @Override
     public String generateBeanName(BeanDefinition definition, BeanDefinitionRegistry registry) {

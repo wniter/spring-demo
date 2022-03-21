@@ -3,9 +3,9 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.example</groupId>
-    <artifactId>springboot-mybatisplus-iservice</artifactId>
+    <artifactId>springboot-mybatisplus-pagehelper</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>springboot-mybatisplus-iservice</name>
+    <name>springboot-mybatisplus-pagehelper</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>
@@ -16,15 +16,18 @@
     </properties>
 
     <dependencies>
-        <!--    添加依赖-->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
         <dependency>
             <groupId>com.baomidou</groupId>
             <artifactId>mybatis-plus-boot-starter</artifactId>
+
             <version>3.5.1</version>
+            <!-- pagehelper 包含该依赖存在版本冲突，因此不建议和 mp 一起混用 -->
+            <exclusions>
+                <exclusion>
+                    <groupId>com.github.jsqlparser</groupId>
+                    <artifactId>jsqlparser</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
         <dependency>
             <groupId>com.h2database</groupId>
@@ -32,10 +35,10 @@
             <scope>runtime</scope>
         </dependency>
         <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
+            <groupId>com.github.pagehelper</groupId>
+            <artifactId>pagehelper</artifactId>
+            <version>5.1.11</version>
         </dependency>
-        <!--      添加依赖-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter</artifactId>
@@ -57,18 +60,10 @@
             <artifactId>lombok</artifactId>
         </dependency>
         <dependency>
-            <groupId>com.github.pagehelper</groupId>
-            <artifactId>pagehelper</artifactId>
-            <version>5.3.0</version>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <scope>test</scope>
         </dependency>
-
-        <dependency>
-            <groupId>org.apache.commons</groupId>
-            <artifactId>commons-lang3</artifactId>
-            <version>3.7</version>
-        </dependency>
-
-
     </dependencies>
 
     <dependencyManagement>
@@ -100,7 +95,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>2.3.7.RELEASE</version>
                 <configuration>
-                    <mainClass>com.example.springboot.mybatisplus.SpringbootMybatisplusIserviceApplication</mainClass>
+                    <mainClass>com.example.springboot.mybatisplus.SpringbootMybatisplusPagehelperApplication</mainClass>
                 </configuration>
                 <executions>
                     <execution>

@@ -2,9 +2,14 @@ package com.example.springboot.mybatisplus.config;
 
 import com.github.pagehelper.PageInterceptor;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
 
-//一个分页查询方式
+/**
+ * 两个分页插件都配置,不会冲突
+ */
+@Configuration
 public class MybatisPlusPageConfig {
+
     /**
      * pagehelper的分页插件
      */
