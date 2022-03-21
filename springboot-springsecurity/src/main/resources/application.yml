@@ -1,0 +1,12 @@
+# 应用名称
+spring:
+  application:
+    name: springboot-springsecurity
+#配置自定义密码
+  security:
+    user:
+      name: admin
+      password: 123456
+      roles: admin
+
+
