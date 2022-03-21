@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.util.*;
+/*
 @Controller
 @RequestMapping("/Differences")
 public class DifferencesController {
@@ -25,3 +26,4 @@ public class DifferencesController {
         return all;
     }
 }
+*/

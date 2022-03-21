@@ -18,6 +18,7 @@ import java.util.*;
  *
  */
 
+/*
 @RestController
 @RequestMapping("/difference")
 public class DifferenceController {
@@ -35,4 +36,4 @@ public class DifferenceController {
         all.put("remark", "可以返回json，xml或自定义mediaType内容到页面");
         return all;
     }
-}
+}*/
