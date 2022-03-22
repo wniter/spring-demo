@@ -9,10 +9,7 @@ import lombok.Data;
 import java.io.Serializable;
 import java.util.Date;
 
-/**
- * @author EalenXie create on 2020/11/24 14:45
- * 自定义认证中心账号表
- */
+
 @Data
 @TableName("oauth_account")
 public class OauthAccount implements Serializable {

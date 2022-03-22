@@ -1,12 +1,11 @@
 package com.example.springboot.oauth.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.github.ealen.domain.entity.OauthAccount;
+import com.example.springboot.oauth.entity.OauthAccount;
+
 import org.apache.ibatis.annotations.Param;
 
-/**
- * @author EalenXie create on 2020/11/24 15:16
- */
+
 public interface OauthAccountMapper extends BaseMapper<OauthAccount> {
 
     /**
