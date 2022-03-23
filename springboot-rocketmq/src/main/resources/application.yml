@@ -1,0 +1,11 @@
+# 应用名称
+#spring.application.name=springboot-rocketmq
+
+rocketmq:
+  producer:
+    group: springBootGroup
+  name-server: 127.0.0.1:9876
+server:
+  port: 1100
+
+

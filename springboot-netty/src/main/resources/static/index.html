@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Websocket</title>
+</head>
+<body>
+<script type="text/javascript">
+    ;(function () {
+        const webSocket = new WebSocket('ws://localhost:1024');
+        webSocket.onmessage = function (e) {
+            console.info("收到消息：", e.data);
+        }
+        webSocket.onclose = function (e) {
+            var {code, reason} = e
+            console.info("断开连接：code=${code},reason=${reason}");
+        }
+        webSocket.onopen = function (e) {
+            console.log("建立连接");
+            webSocket.send('hello world');
+        }
+        webSocket.onerror = function (e) {
+            console.log('连接异常' + e);
+        }
+    })();
+</script>
+</body>
+</html>
