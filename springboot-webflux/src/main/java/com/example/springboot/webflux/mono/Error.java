@@ -50,8 +50,8 @@ public class Error {
 //                .retry();
         Mono.error(IllegalArgumentException::new)
                 .retry(2);
-        Mono.error(IllegalArgumentException::new)
-                .retry(2,ex -> ex instanceof IllegalArgumentException);
+//        Mono.error(IllegalArgumentException::new)
+//                .retry(2,ex -> ex instanceof IllegalArgumentException);
 
         Mono.fromFuture(CompletableFuture.supplyAsync(() -> {
             try {

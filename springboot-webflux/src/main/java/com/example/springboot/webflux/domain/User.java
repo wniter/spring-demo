@@ -1,10 +1,13 @@
 package com.example.springboot.webflux.domain;
 
+import lombok.Data;
+
 //@Data
 //@NoArgsConstructor
 //@AllArgsConstructor
 //@ToString
 //@EqualsAndHashCode
+
 public class User {
 
     public static final User SKYLER = new User("swhite", "Skyler", "White");

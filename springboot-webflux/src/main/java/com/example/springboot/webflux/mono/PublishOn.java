@@ -1,6 +1,9 @@
 package com.example.springboot.webflux.mono;
 
-import com.sun.istack.internal.logging.Logger;
+
+
+
+import lombok.extern.slf4j.Slf4j;
 import reactor.core.publisher.Mono;
 import reactor.util.function.Tuple2;
 
@@ -11,9 +14,10 @@ import java.util.concurrent.*;
  * @author WangZhiJian
  * @since 2021/3/28
  */
+@Slf4j
 public class PublishOn {
 
-    static Logger log = Logger.getLogger(PublishOn.class);
+//    static Logger log = Logger.getLogger(PublishOn.class);
 
     public static void main(String[] args) throws InterruptedException {
 

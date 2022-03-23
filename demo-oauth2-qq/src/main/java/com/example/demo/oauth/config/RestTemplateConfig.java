@@ -15,3 +15,7 @@ public class RestTemplateConfig {
         return builder.build();
     }
 }
+/**
+ * restTemplate 详解
+ * https://zhuanlan.zhihu.com/p/31681913
+ */
