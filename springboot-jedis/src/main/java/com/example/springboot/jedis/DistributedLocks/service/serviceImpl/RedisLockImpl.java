@@ -5,6 +5,7 @@ import com.example.springboot.jedis.DistributedLocks.service.RedisLock;
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisPool;
 import redis.clients.jedis.JedisPoolConfig;
+import redis.clients.jedis.params.SetParams;
 
 import java.util.Collections;
 import java.util.HashMap;
@@ -38,14 +39,14 @@ public class RedisLockImpl implements RedisLock {
         }
 
         // boolean lock = "OK".equalsIgnoreCase(jedis.set(key, value, "nx", "ex", expire));
-//        SetParams setParams = new SetParams();
-//        setParams.nx().ex(expire);
-//        boolean lock = "OK".equalsIgnoreCase(jedis.set(key, value, setParams));
-//        if (!lock) {
-//            closeJedisInstance();
-//        }
-//        return lock;
-        return true;
+        SetParams setParams = new SetParams();
+        setParams.nx().ex(expire);
+        boolean lock = "OK".equalsIgnoreCase(jedis.set(key, value, setParams));
+        if (!lock) {
+            closeJedisInstance();
+        }
+        return lock;
+
 
     }
     @Override
