@@ -2,7 +2,17 @@
 #spring.application.name=springboot-ehcache
 
 
-cache:
-  type: ehcache
-  ehcache:
-    config: classpath:app1_ehcache.xml
+
+
+#cache:
+#   type: ehcache
+ #  ehcache:
+  #   config: classpath:app1_ehcache.xml
+spring:
+  cache:
+    type: ehcache
+    ehcache:
+      config: classpath:ehcache.xml
+logging:
+  level:
+    com.example: debug
