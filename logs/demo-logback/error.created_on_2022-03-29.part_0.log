@@ -1,0 +1,6 @@
+2022-03-29 21:01:16.373 ERROR 20268 --- [main] c.e.s.l.SpringbootLogbackApplication     SpringbootLogbackApplication.java:18: Spring boot启动初始化了 125 个 Bean
+2022-03-29 21:01:16.374 ERROR 20268 --- [main] c.e.s.l.SpringbootLogbackApplication     SpringbootLogbackApplication.java:23: 【SpringBootDemoLogbackApplication】启动异常：
+
+java.lang.ArithmeticException: / by zero
+	at com.example.springboot.logback.SpringbootLogbackApplication.main(SpringbootLogbackApplication.java:21)
+

@@ -1,0 +1,12 @@
+2022-03-29 21:01:15.226  INFO 20268 --- [main] c.e.s.l.SpringbootLogbackApplication     : Starting SpringbootLogbackApplication on LAPTOP-1DAU11LQ with PID 20268 (F:\项目\spring-demo\spring-demo\springboot-logback\target\classes started by admin in F:\项目\spring-demo\spring-demo)
+2022-03-29 21:01:15.232  INFO 20268 --- [main] c.e.s.l.SpringbootLogbackApplication     : No active profile set, falling back to default profiles: default
+2022-03-29 21:01:16.119  INFO 20268 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-03-29 21:01:16.125  INFO 20268 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-03-29 21:01:16.127  INFO 20268 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-03-29 21:01:16.191  INFO 20268 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/demo]   : Initializing Spring embedded WebApplicationContext
+2022-03-29 21:01:16.191  INFO 20268 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 852 ms
+2022-03-29 21:01:16.279  INFO 20268 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-03-29 21:01:16.365  INFO 20268 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/demo'
+2022-03-29 21:01:16.371  INFO 20268 --- [main] c.e.s.l.SpringbootLogbackApplication     : Started SpringbootLogbackApplication in 1.812 seconds (JVM running for 2.573)
+2022-03-29 21:01:16.372  INFO 20268 --- [main] c.e.s.l.SpringbootLogbackApplication     : Spring boot启动初始化了 125 个 Bean
+2022-03-29 21:01:16.373  WARN 20268 --- [main] c.e.s.l.SpringbootLogbackApplication     : Spring boot启动初始化了 125 个 Bean
