@@ -4,8 +4,11 @@ import org.springframework.boot.actuate.health.Health;
 import org.springframework.boot.actuate.health.HealthIndicator;
 import org.springframework.stereotype.Component;
 
+/**
+ * 编写自定义HealthIndicators
+ */
 
-//53.8.2编写自定义HealthIndicators
+
 //@Component
 //public class MyHealthIndicator implements HealthIndicator {
 //    @Override
