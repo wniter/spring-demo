@@ -42,3 +42,15 @@ public interface UserRepository extends JpaRepository<User, Long> {
      * 上述代码中，我们还自定义了一个方法 findByName()，JpaRepository 可根据方法名称自动实现对应的逻辑。
      */
 }
+//
+//public interface UserRepository extends JpaRepository<User, Long> {
+//
+//    User findByName(String name);
+//
+//    User findByNameAndAge(String name, Integer age);
+//
+//    @Query("from User u where u.name=:name")
+//    User findUser(@Param("name") String name);
+//
+//
+//}
